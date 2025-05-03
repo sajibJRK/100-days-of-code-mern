@@ -1,0 +1,47 @@
+.login{
+    
+    background-color: aliceblue;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    margin: 40px;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+
+}
+h3{
+    font-size: 15px;
+    text-align: center;;
+}
+h2{
+    font-size: 20px;
+}
+
+
+input{
+ width: 350px;
+ height: 30px;
+ border-radius: 8px;
+ 
+}
+
+.button-wrappper{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+   
+
+}
+button{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+    }
+
+button:active{
+    background-color: blue;
+}
