@@ -1,0 +1,22 @@
+/* universal selector ( * )  */
+*{
+    font-size: 50px;
+    background-color: black ;
+}
+/* element selector */
+h1{
+    color: blue;
+}
+/* class selector(.) */
+.intro{
+    color: brown;
+}
+/* id */
+#doc{
+    color: chocolate;
+}
+/* multiple selector */
+.intro span{
+    color: cyan;
+
+}

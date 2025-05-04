@@ -1,0 +1,12 @@
+Day 03 - CSS Selectors, Colors, and Background Practice
+
+ Practiced:
+Tag, Class, and ID Selectors
+Applied color using named color,
+Used background-color
+Combined multiple selectors
+
+
+Files:
+index.html
+style.css
