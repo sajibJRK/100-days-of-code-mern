@@ -1,0 +1,7 @@
+Day 04 - 100 Days of Code
+Topic: Forms & Input Fields
+What I learned:
+
+Basic structure of HTML forms
+
+Input types: text, email, number, textarea, etc.

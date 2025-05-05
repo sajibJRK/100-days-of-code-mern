@@ -1,0 +1,65 @@
+
+h1{
+    text-align: center;
+}
+.input-feld{
+    display: flex;
+    display: inline-block;
+
+}
+
+.contract-info{
+    width: 500px;
+    height: 700px;
+    background-color: aquamarine;
+}
+
+.full-name input{
+    width: 350px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:10px 0px 0px 40px;
+    display: block;
+}
+.email input{
+    width: 350px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:10px 0px 0px 40px;
+    display: block;
+}
+.phone-number input{
+    width: 350px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:10px 0px 0px 40px;
+    display: block;
+}
+.address input{
+    width: 350px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:10px 0px 0px 40px;
+    display: block;
+}
+.message input{
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:10px 0px 0px 40px;
+    display: block;
+    text-align: center;
+}
+.button button{
+    width: 70px;
+    height: 30px;
+    margin: 10px 45%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
