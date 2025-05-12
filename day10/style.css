@@ -1,0 +1,27 @@
+.animated-btn{
+    margin: 20px 0px 0px 20px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+}
+.animated-btn:hover{
+    background-color: #0056b3;
+    box-shadow: 0 0 20px #007bff , 0 0 20px #007bff;
+}
+
+.loader{
+    width: 60px;
+    height: 60px;
+    border: 10px solid #0a6fdb;
+    border-top: 10px solid #ffffff;
+    border-radius: 50%;
+    margin: 50px 20px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
