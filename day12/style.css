@@ -1,0 +1,40 @@
+body{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: rgb(255, 254, 254);
+    height: 150px;
+    width: 300px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+h1{
+        margin-top: -15px;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+button{
+    padding: 12px 24px;
+    background-color: rgb(17, 90, 226);
+    color: white;
+    border-radius: 10px;
+    
+}
+button:hover{
+     cursor: pointer;
+     background-color: rgb(10, 16, 75);
+}
+p{
+    color: black;
+}
