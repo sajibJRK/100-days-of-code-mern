@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+
+        .container {
+            border-radius: 10px;
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container input {
+            width: 90%;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 8px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>bill calculator</h2>
+        <input type="number" id="bill" placeholder="enter bill amount">
+        <input type="number" id="tip" placeholder="enter tip parsent (%)">
+        <button onclick="calculate()">calculate </button>
+        <p id="tip-result">0</p>
+        <p id="total-result">0</p>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
