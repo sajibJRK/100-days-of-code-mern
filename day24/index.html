@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Currency Converter</h3>
+        <input type="number" id="amount" placeholder="Amount" />
+        <h6>from</h6>
+        <select id="from">
+            <option value="USD">USD</option>
+            <option value="BDT">BDT</option>
+        </select>
+        <h6>to</h6>
+        <select id="to">
+            <option value="BDT">BDT</option>
+            <option value="USD">USD</option>
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="result"></p>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
