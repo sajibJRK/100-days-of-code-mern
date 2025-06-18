@@ -1,7 +1,8 @@
  Note on Challenge Progress...
 
-Due to an unexpected laptop issue, I was unable to continue the 100 Days of Code challenge for a brief period.
 
-However, the challenge was not abandoned — just paused temporarily and has now been resumed. I'm committed to completing all the planned days with consistency and quality.
+On Day 30 of the 100 Days of Code challenge, my laptop unexpectedly stopped working, which caused a brief pause in my progress.
+
+However, the challenge was not abandoned — just temporarily paused and has now been resumed. I'm committed to completing all the planned days with consistency and quality.
 
 Thanks for understanding!
