@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+     </head>
+     <body>
+          <div id="app">
+               <h2>My Notes</h2>
+               <input type="text" id="noteInput" placeholder="Write a note" />
+               <button id="addNoteBtn">Add Note</button>
+               <ul id="noteList"></ul>
+          </div>
+          <script>
+               const input = document.getElementById("noteInput");
+               const addBtn = document.getElementById("addNoteBtn");
+               const noteList = document.getElementById("noteList");
+
+               addBtn.addEventListener("click", () => {
+                    const noteText = input.value.trim();
+
+                    if (noteText === "") return;
+
+                    const li = document.createElement("li");
+                    li.textContent = noteText;
+
+                    const delBtn = document.createElement("button");
+                    delBtn.textContent = "Delete";
+                    delBtn.style.marginLeft = "10px";
+
+                    delBtn.addEventListener("click", () => {
+                         li.remove();
+                    });
+
+                    li.appendChild(delBtn);
+                    noteList.appendChild(li);
+
+                    input.value = "";
+               });
+          </script>
+     </body>
+</html>
