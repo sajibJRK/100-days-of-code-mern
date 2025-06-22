@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Document</title>
+     </head>
+     <body>
+          <div class="container">
+               <h1>Mini JS Toolkit</h1>
+               <div class="tool">
+                    <h2>Text Transformer</h2>
+                    <textarea
+                         id="text-input"
+                         placeholder="Enter your text here..."
+                    ></textarea>
+                    <div class="buttons">
+                         <button onclick="toUpperCase()">UPPERCASE</button>
+                         <button onclick="toLowerCase()">lowercase</button>
+                         <button onclick="capitalizeFirst()">Capitalize</button>
+                    </div>
+                    <p><strong>Result:</strong></p>
+                    <p id="text-output"></p>
+               </div>
+
+               <div class="tool">
+                    <h2>Word & Character Counter</h2>
+                    <textarea
+                         id="count-input"
+                         placeholder="Type here..."
+                    ></textarea>
+                    <p>Words: <span id="word-count">0</span></p>
+                    <p>Characters: <span id="char-count">0</span></p>
+               </div>
+               <div class="tool">
+                    <h2>Password Generator</h2>
+                    <label
+                         >Password Length:
+                         <input
+                              type="number"
+                              id="pass-length"
+                              value="10"
+                              min="4"
+                              max="32"
+                    /></label>
+                    <button onclick="generatePassword()">Generate</button>
+                    <p>
+                         <strong>Password:</strong>
+                         <span id="password-output"></span>
+                    </p>
+               </div>
+          </div>
+          <script src="script.js"></script>
+     </body>
+</html>
