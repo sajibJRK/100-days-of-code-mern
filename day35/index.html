@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Merged Contact List</title>
+          <style>
+               body {
+                    font-family: Arial;
+                    padding: 20px;
+               }
+               h2 {
+                    color: #444;
+               }
+               ul {
+                    list-style: none;
+                    padding-left: 0;
+               }
+               li {
+                    padding: 5px 0;
+               }
+          </style>
+     </head>
+     <body>
+          <h2>Merged Contact List</h2>
+          <ul id="contactList"></ul>
+
+          <script>
+               const contactList1 = [
+                    { name: "sajib", phone: "01400-00000" },
+                    { name: "sadhon", phone: "01200-00000" },
+                    { name: "shohag", phone: "01300-00000" },
+               ];
+
+               const contactList2 = [
+                    { name: "pollob", phone: "01500-00000" },
+                    { name: "sadhon", phone: "01200-00000" }, // duplicate
+                    { name: "sajib", phone: "01400-00000" }, // duplicate
+               ];
+
+               // Merge lists using spread operator
+               const mergedContacts = [...contactList1, ...contactList2];
+
+               // Remove duplicates based on phone number
+               const uniqueContacts = [];
+               const phoneSet = new Set();
+
+               for (const { name, phone } of mergedContacts) {
+                    if (!phoneSet.has(phone)) {
+                         uniqueContacts.push({ name, phone });
+                         phoneSet.add(phone);
+                    }
+               }
+
+               // Display contacts in the DOM
+               const ul = document.getElementById("contactList");
+               uniqueContacts.forEach(({ name, phone }) => {
+                    const li = document.createElement("li");
+                    li.textContent = `${name} - ${phone}`;
+                    ul.appendChild(li);
+               });
+          </script>
+     </body>
+</html>
