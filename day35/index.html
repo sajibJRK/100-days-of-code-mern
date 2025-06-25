@@ -41,10 +41,8 @@
                     { name: "sajib", phone: "01400-00000" }, // duplicate
                ];
 
-               // Merge lists using spread operator
                const mergedContacts = [...contactList1, ...contactList2];
 
-               // Remove duplicates based on phone number
                const uniqueContacts = [];
                const phoneSet = new Set();
 
@@ -55,7 +53,6 @@
                     }
                }
 
-               // Display contacts in the DOM
                const ul = document.getElementById("contactList");
                uniqueContacts.forEach(({ name, phone }) => {
                     const li = document.createElement("li");
