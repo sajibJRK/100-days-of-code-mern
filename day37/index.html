@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <title>Timer</title>
+          <style>
+               body {
+                    font-family: Arial, sans-serif;
+                    text-align: center;
+                    padding-top: 50px;
+               }
+               #timer {
+                    font-size: 40px;
+                    margin-top: 20px;
+               }
+               input {
+                    padding: 8px;
+                    font-size: 16px;
+               }
+               button {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    margin-left: 10px;
+                    cursor: pointer;
+               }
+          </style>
+     </head>
+     <body>
+          <h1>Timer</h1>
+
+          <input
+               type="number"
+               id="timeInput"
+               placeholder="Enter time in seconds"
+               min="1"
+          />
+          <button onclick="startTimer()">Start</button>
+
+          <div id="timer"></div>
+
+          <script>
+               function countdown(seconds, callback) {
+                    const timerDisplay = document.getElementById("timer");
+
+                    function runTimer(sec) {
+                         if (sec > 0) {
+                              timerDisplay.textContent = `Time Left: ${sec}s`;
+                              setTimeout(() => runTimer(sec - 1), 1000);
+                         } else {
+                              callback();
+                         }
+                    }
+
+                    runTimer(seconds);
+               }
+
+               function timerDone() {
+                    document.getElementById("timer").textContent =
+                         "⏰ Time's up!";
+               }
+
+               function startTimer() {
+                    const input = document.getElementById("timeInput");
+                    const seconds = parseInt(input.value);
+
+                    if (isNaN(seconds) || seconds <= 0) {
+                         alert("Please enter a valid number of seconds.");
+                         return;
+                    }
+
+                    countdown(seconds, timerDone);
+               }
+          </script>
+     </body>
+</html>
