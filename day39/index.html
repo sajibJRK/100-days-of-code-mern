@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke</title>
+</head>
+<body>
+      <h1>Random Joke</h1>
+  <button id="getJoke">Get a Joke</button>
+  <p id="joke"></p>
+
+  <script >
+    const jokeBtn = document.getElementById('getJoke');
+const jokeText = document.getElementById('joke');
+
+jokeBtn.addEventListener('click', getJoke);
+
+async function getJoke() {
+  try {
+    const res = await fetch('https://icanhazdadjoke.com/', {
+      headers: { Accept: 'application/json' }
+    });
+    const data = await res.json();
+    jokeText.textContent = data.joke;
+  } catch (err) {
+    jokeText.textContent = 'Failed to fetch joke. Try again later!';
+    console.error(err);
+  }
+}
+  </script>
+</body>
+</html>
