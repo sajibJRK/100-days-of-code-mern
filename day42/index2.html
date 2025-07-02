@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Image Viewer</title>
+     </head>
+     <body>
+          <div>
+               <img
+                    class="imag"
+                    src="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-spring-summer-day-in-green-nature-mountains-free-image.jpg?w=210&quality=70"
+                    large="https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-spring-summer-day-in-green-nature-mountains-free-image.jpg?w=2210&quality=70"
+                    alt=""
+               />
+
+               <img
+                    class="imag"
+                    src="https://i0.wp.com/picjumbo.com/wp-content/uploads/snowy-mountain-scenery-with-setting-sun-and-clouds-free-photo.jpg?w=210&quality=70"
+                    large="https://i0.wp.com/picjumbo.com/wp-content/uploads/snowy-mountain-scenery-with-setting-sun-and-clouds-free-photo.jpg?w=2210&quality=70"
+                    alt=""
+               />
+
+               <div id="bigger"></div>
+          </div>
+
+          <script>
+               const images = document.querySelectorAll(".imag");
+               const bigger = document.getElementById("bigger");
+
+               images.forEach((image) => {
+                    image.addEventListener("click", function () {
+                         const large = image.getAttribute("large");
+                         const img = document.createElement("img");
+                         img.src = large;
+                         img.style.width = "100%";
+                         bigger.innerHTML = "";
+                         bigger.appendChild(img);
+                    });
+               });
+          </script>
+     </body>
+</html>
